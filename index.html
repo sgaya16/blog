@@ -1,0 +1,35 @@
+---
+layout: default
+title: Sara Gaya
+---
+
+<h1>{{ site.title }} 🐚</h1>
+<p>
+  Software developer based in Massachussetts. Works with JavaScript, React, Vue,
+  Python, and Django. Loves video games, Sailor Moon, coffee, and cute things.
+</p>
+
+<hr class="break" />
+
+<h2>Posts</h2>
+<ul>
+  {% for post in site.posts %}
+  <li>
+    <h2>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </h2>
+  </li>
+  {% endfor %}
+</ul>
+
+<hr class="break" />
+
+<h2>Thoughts <a href="/thoughts">↦</a></h2>
+<ul>
+  {% for thought in site.data.thoughts limit: 2 %}
+  <li>
+    <h2>{{ thought.emoji }}</h2>
+    {{ thought.date }} {{thought.content | markdownify }}
+  </li>
+  {% endfor %}
+</ul>

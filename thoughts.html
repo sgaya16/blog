@@ -1,0 +1,15 @@
+---
+layout: default
+title: Thoughts
+description: what I think about tweeting, but never do 🤷🏻‍♀️
+---
+
+<ul>
+	{% for thought in site.data.thoughts %}
+	<li class="thought">
+		<h2>{{ thought.emoji }}</h2>
+		<p>{{ thought.date }}</p>
+		{{ thought.content | markdownify }}
+	</li>
+	{% endfor %}
+</ul>
