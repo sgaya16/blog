@@ -1,3 +1,135 @@
-.current {
-  color: green;
+body {
+  font-family: $sans_serif;
+  line-height: 1.8em;
+  background: $white;
+  color: $black;
+  font-size: $regular;
+}
+
+header,
+main,
+footer,
+.post-content,
+.sweet-content {
+  max-width: $max_width;
+  margin: auto;
+}
+
+header {
+  padding-top: 2.4em;
+}
+
+main,
+.post-content {
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+}
+
+footer {
+  font-size: $xs;
+  padding-top: 1.4em;
+  padding-bottom: 1.2em;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $serif;
+  font-weight: $semi_bold;
+}
+
+h1 {
+  font-weight: $semi_bold;
+  font-size: $large;
+}
+
+h2 {
+  font-size: $small;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+
+  li {
+    padding-bottom: 0.6em;
+  }
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid $mint_blue;
+  border-top-style: dotted;
+  margin: 2em 0;
+  width: 24%;
+  //background: $mint_blue;
+  // border: none;
+  // border-radius: 50%;
+  // height: 0.8rem;
+  // width: 0.8rem;
+  // margin: 2em 0 2em 0;
+}
+
+time {
+  font-size: $xs;
+}
+
+a {
+  color: $mint-blue;
+}
+
+.posts,
+.sweets {
+  line-height: 1.6em;
+
+  time {
+    color: #999;
+  }
+}
+
+.post-header,
+.sweet-header {
+  font-size: $regular;
+
+  a {
+    text-decoration: none;
+    font-size: $small;
+  }
+
+  h1 {
+    margin-bottom: 0.4em;
+  }
+
+  time {
+    font-size: $regular;
+    color: #999;
+  }
+}
+
+.post-header {
+  padding-bottom: 1em;
+}
+
+.post-content {
+  ul {
+    list-style-type: square;
+    padding-left: 0.8em;
+  }
+}
+
+.sweet-content {
+  li {
+    border: 1px dotted $mint_blue;
+    border-radius: 2em;
+    padding: 1em;
+    margin-bottom: 2em;
+  }
+
+  time {
+    color: #999;
+  }
+
+  p {
+    margin-top: 0.2em;
+  }
 }
