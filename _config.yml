@@ -1,6 +1,6 @@
 title: Sara Gaya
 timezone: America/New_York
-url: "https://saragaya.com"
+url: https://saragaya.com
 collections:
   thoughts:
     output: false
