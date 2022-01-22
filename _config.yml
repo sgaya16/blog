@@ -1,8 +1,6 @@
 title: Sara Gaya
 timezone: America/New_York
-url: saragaya.com
+url: "https://saragaya.com"
 collections:
   thoughts:
     output: false
-plugins:
-  - jekyll-feed
