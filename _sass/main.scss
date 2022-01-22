@@ -8,33 +8,44 @@ body {
 
 header,
 main,
-footer,
 .post-content,
 .thought-content {
-  max-width: $max_width;
+  max-width: $max_content_width;
   margin: auto;
 }
 
 header {
-  padding-top: 2.4em;
+  padding-top: 1.4em;
 
-  img {
-    width: 30%;
+  h2 {
+    margin-top: 0.6em;
   }
 }
 
 main,
 .post-content {
-  padding-top: 0.4em;
+  padding-top: 0.8em;
   padding-bottom: 0.4em;
+
+  .pfp {
+    width: 30%;
+  }
 }
 
 footer {
+  max-width: $max_footer_width;
+  margin: auto;
+  padding-top: 1.6em;
   font-size: $xs;
-  padding-top: 1.4em;
-  padding-bottom: 1.2em;
+  font-weight: $semi_bold;
+  margin-top: 1.6em;
+
+  a {
+    color: $mint_blue;
+  }
 }
 
+header,
 h1,
 h2,
 h3 {
@@ -45,10 +56,6 @@ h3 {
 h1 {
   font-weight: $semi_bold;
   font-size: $large;
-}
-
-h2 {
-  font-size: $small;
 }
 
 ul {
@@ -65,13 +72,7 @@ hr {
   border-top: 1px solid $mint_blue;
   border-top-style: dotted;
   margin: 2em 0;
-  width: 24%;
-  //background: $mint_blue;
-  // border: none;
-  // border-radius: 50%;
-  // height: 0.8rem;
-  // width: 0.8rem;
-  // margin: 2em 0 2em 0;
+  width: 36%;
 }
 
 time {
@@ -82,39 +83,38 @@ a {
   color: $mint-blue;
 }
 
+.link-plain,
+.link-thoughts {
+  text-decoration: none;
+}
+
+.link-thoughts {
+  font-size: $regular;
+  border: 1px solid $mint_blue;
+  border-radius: 0.8em;
+  padding: 0.4em 0.6em;
+  color: $black;
+}
+
 .posts,
 .thoughts {
   line-height: 1.6em;
 
-  time {
-    color: #999;
-  }
-}
-
-.post-header,
-.thought-header {
-  font-size: $regular;
-
-  a {
-    text-decoration: none;
-    font-size: $small;
-  }
-
-  h1 {
-    margin-bottom: 0.4em;
+  p {
+    margin-top: 0.2em;
+    margin-bottom: 0.8em;
   }
 
   time {
-    font-size: $regular;
     color: #999;
   }
-}
-
-.post-header {
-  padding-bottom: 1em;
 }
 
 .post-content {
+  h2 {
+    font-size: $medium;
+  }
+
   ul {
     list-style-type: square;
     padding-left: 0.8em;
@@ -122,6 +122,11 @@ a {
 }
 
 .thought-content {
+  h2 {
+    font-size: $medium;
+    margin-bottom: 0.4em;
+  }
+
   li {
     border: 1px dotted $mint_blue;
     border-radius: 2em;
@@ -136,4 +141,8 @@ a {
   p {
     margin-top: 0.2em;
   }
+}
+
+.dash {
+  color: #999;
 }

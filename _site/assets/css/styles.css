@@ -1,51 +1,55 @@
 body { font-family: "Roboto", sans-serif; line-height: 1.8em; background: #fafafa; color: #161616; font-size: 16px; }
 
-header, main, footer, .post-content, .thought-content { max-width: 36em; margin: auto; }
+header, main, .post-content, .thought-content { max-width: 38em; margin: auto; }
 
-header { padding-top: 2.4em; }
+header { padding-top: 1.4em; }
 
-header img { width: 30%; }
+header h2 { margin-top: 0.6em; }
 
-main, .post-content { padding-top: 0.4em; padding-bottom: 0.4em; }
+main, .post-content { padding-top: 0.8em; padding-bottom: 0.4em; }
 
-footer { font-size: 12px; padding-top: 1.4em; padding-bottom: 1.2em; }
+main .pfp, .post-content .pfp { width: 30%; }
 
-h1, h2, h3 { font-family: "Roboto Slab", serif; font-weight: 600; }
+footer { max-width: 40em; margin: auto; padding-top: 1.6em; font-size: 12px; font-weight: 600; margin-top: 1.6em; }
+
+footer a { color: #429e9d; }
+
+header, h1, h2, h3 { font-family: "Roboto Slab", serif; font-weight: 600; }
 
 h1 { font-weight: 600; font-size: 36px; }
-
-h2 { font-size: 20px; }
 
 ul { list-style-type: none; padding-left: 0; }
 
 ul li { padding-bottom: 0.6em; }
 
-hr { border: 0; border-top: 1px solid #429e9d; border-top-style: dotted; margin: 2em 0; width: 24%; }
+hr { border: 0; border-top: 1px solid #429e9d; border-top-style: dotted; margin: 2em 0; width: 36%; }
 
 time { font-size: 12px; }
 
 a { color: #429e9d; }
 
+.link-plain, .link-thoughts { text-decoration: none; }
+
+.link-thoughts { font-size: 16px; border: 1px solid #429e9d; border-radius: 0.8em; padding: 0.4em 0.6em; color: #161616; }
+
 .posts, .thoughts { line-height: 1.6em; }
+
+.posts p, .thoughts p { margin-top: 0.2em; margin-bottom: 0.8em; }
 
 .posts time, .thoughts time { color: #999; }
 
-.post-header, .thought-header { font-size: 16px; }
-
-.post-header a, .thought-header a { text-decoration: none; font-size: 20px; }
-
-.post-header h1, .thought-header h1 { margin-bottom: 0.4em; }
-
-.post-header time, .thought-header time { font-size: 16px; color: #999; }
-
-.post-header { padding-bottom: 1em; }
+.post-content h2 { font-size: 28px; }
 
 .post-content ul { list-style-type: square; padding-left: 0.8em; }
+
+.thought-content h2 { font-size: 28px; margin-bottom: 0.4em; }
 
 .thought-content li { border: 1px dotted #429e9d; border-radius: 2em; padding: 1em; margin-bottom: 2em; }
 
 .thought-content time { color: #999; }
 
 .thought-content p { margin-top: 0.2em; }
+
+.dash { color: #999; }
 
 /*# sourceMappingURL=styles.css.map */

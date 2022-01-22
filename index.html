@@ -3,30 +3,26 @@ layout: default
 title: Sara Gaya
 ---
 
-<header>
-  <img src="assets/images/pfp.jpg" />
-</header>
 <main>
+  <img class="pfp" src="assets/images/pfp.jpg" />
   <p>
     I'm Sara, a software developer based in Massachusetts. I work with
     JavaScript, React, Vue, Python, and Django. I love video games 🎮, Sailor
-    Moon 🌙, coffee ☕️, and cute things 🌸.
-  </p>
-  <p>
-    Check me out on:
+    Moon 🌙, coffee ☕️, and cute things 🌸. Check me out on
     <a href="https://github.com/sgaya16" target="_blank">🐙 Github</a>,
-    <a href="http://www.sarag.me/" target="_blank">💻 my (other) site</a>,
-    <a href="https://read.cv/sarag" target="_blank">📝 read.cv</a>
+    <a href="http://www.sarag.me/" target="_blank">💻 my other site</a>,
+    <a href="https://read.cv/sarag" target="_blank">📝 read.cv</a>, and contact
+    me through my <a href="mailto:saracgaya@gmail.com">📧 email</a>.
   </p>
 
   <hr />
 
-  <h2>Posts</h2>
+  <h2>🪶 Posts</h2>
   <ul class="posts">
     {% for post in site.posts %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
-      ﹣
+      <span class="dash">﹣</span>
       <time>{{ post.date | date: "%B %d, %Y" }}</time>
     </li>
     {% endfor %}
@@ -34,7 +30,7 @@ title: Sara Gaya
 
   <hr />
 
-  <h2>☁️ Thoughts <a href="/thoughts">➡️</a></h2>
+  <h2>💭 Thought Bubbles</h2>
   <ul class="thoughts">
     {% for thought in site.data.thoughts limit: 2 %}
     <li>
@@ -44,4 +40,5 @@ title: Sara Gaya
     </li>
     {% endfor %}
   </ul>
+  <a class="link-thoughts" href="/thoughts">➡️ read more</a>
 </main>
