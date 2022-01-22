@@ -1,7 +1,7 @@
 body {
   font-family: $sans_serif;
   line-height: 1.8em;
-  background: $white;
+  background: $gray;
   color: $black;
   font-size: $regular;
 }
@@ -10,13 +10,17 @@ header,
 main,
 footer,
 .post-content,
-.sweet-content {
+.thought-content {
   max-width: $max_width;
   margin: auto;
 }
 
 header {
   padding-top: 2.4em;
+
+  img {
+    width: 30%;
+  }
 }
 
 main,
@@ -79,7 +83,7 @@ a {
 }
 
 .posts,
-.sweets {
+.thoughts {
   line-height: 1.6em;
 
   time {
@@ -88,7 +92,7 @@ a {
 }
 
 .post-header,
-.sweet-header {
+.thought-header {
   font-size: $regular;
 
   a {
@@ -117,7 +121,7 @@ a {
   }
 }
 
-.sweet-content {
+.thought-content {
   li {
     border: 1px dotted $mint_blue;
     border-radius: 2em;

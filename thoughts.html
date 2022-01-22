@@ -1,0 +1,21 @@
+---
+layout: default
+title: Sweets
+description: what I think about tweeting, but never do 🤷🏻‍♀️
+---
+
+<header class="thought-header">
+  <a href="/"> ⬅️ </a>
+  <h1>Thoughts</h1>
+  <p>Musings I would tweet about if I wasn't cripplingly shy.</p>
+</header>
+<main class="thought-content">
+  <ul>
+    {% for thought in site.data.thoughts %}
+    <li class="thought">
+      <time>{{ thought.date | date_to_string }}</time>
+      {{ thought.content | markdownify }}
+    </li>
+    {% endfor %}
+  </ul>
+</main>

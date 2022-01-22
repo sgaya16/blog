@@ -4,13 +4,13 @@ title: Sara Gaya
 ---
 
 <header>
-  <h1>{{ page.title }}</h1>
+  <img src="assets/images/pfp.jpg" />
 </header>
 <main>
   <p>
-    Software developer based in Massachusetts. Works with JavaScript, React,
-    Vue, Python, and Django. Loves video games 🎮, Sailor Moon 🌙, coffee ☕️,
-    and cute things 🌸.
+    I'm Sara, a software developer based in Massachusetts. I work with
+    JavaScript, React, Vue, Python, and Django. I love video games 🎮, Sailor
+    Moon 🌙, coffee ☕️, and cute things 🌸.
   </p>
   <p>
     Check me out on:
@@ -19,7 +19,7 @@ title: Sara Gaya
     <a href="https://read.cv/sarag" target="_blank">📝 read.cv</a>
   </p>
 
-  <hr class="break" />
+  <hr />
 
   <h2>Posts</h2>
   <ul class="posts">
@@ -32,15 +32,15 @@ title: Sara Gaya
     {% endfor %}
   </ul>
 
-  <hr class="break" />
+  <hr />
 
-  <h2>Sweets <a href="/sweets">➡️</a></h2>
-  <ul class="sweets">
-    {% for sweet in site.data.sweets limit: 2 %}
+  <h2>☁️ Thoughts <a href="/thoughts">➡️</a></h2>
+  <ul class="thoughts">
+    {% for thought in site.data.thoughts limit: 2 %}
     <li>
-      <time>{{ sweet.date | date: "%B %d, %Y" }}</time>
+      <time>{{ thought.date | date: "%B %d, %Y" }}</time>
       <br />
-      {{ sweet.content | markdownify }}
+      {{ thought.content | markdownify }}
     </li>
     {% endfor %}
   </ul>
