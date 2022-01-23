@@ -146,3 +146,45 @@ a {
 .dash {
   color: #999;
 }
+
+@media screen and (max-width: 800px) {
+  header,
+  main,
+  .post-content,
+  .thought-content {
+    max-width: 36em;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  header,
+  main,
+  .post-content,
+  .thought-content {
+    max-width: 26em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header,
+  main,
+  .post-content,
+  .thought-content {
+    //padding-top: 1.6em;
+    max-width: 20em;
+  }
+
+  footer {
+    max-width: 24em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header,
+  main,
+  .post-content,
+  .thought-content {
+    padding-top: 1.4em;
+    max-width: 18em;
+  }
+}
