@@ -28,7 +28,7 @@ main,
   padding-bottom: 0.4em;
 
   .pfp {
-    width: 30%;
+    width: 40%;
   }
 }
 
@@ -170,8 +170,11 @@ a {
   main,
   .post-content,
   .thought-content {
-    //padding-top: 1.6em;
     max-width: 20em;
+
+    .pfp {
+      width: 60%;
+    }
   }
 
   footer {
@@ -186,5 +189,15 @@ a {
   .thought-content {
     padding-top: 1.4em;
     max-width: 18em;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  header,
+  main,
+  .post-content,
+  .thought-content {
+    padding-top: 1.4em;
+    max-width: 14em;
   }
 }
