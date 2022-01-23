@@ -1,15 +1,10 @@
 ---
 title: Sara Gaya
 timezone: America/New_York
+url: https://saragaya.com
+baseurl: ""
 collections:
   posts:
-    title: Posts
     output: true
   thoughts:
-    title: Thoughts
     output: false
-  uploads:
-    title: Uploads
-    output: true
-url: https://saragaya.com
-baseurl: ''
