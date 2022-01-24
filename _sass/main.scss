@@ -1,7 +1,7 @@
 body {
   font-family: $sans_serif;
   line-height: 1.8em;
-  background: $gray;
+  background: $light_mode;
   color: $black;
   font-size: $regular;
 }
@@ -15,6 +15,9 @@ main,
 }
 
 header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   padding-top: 1.4em;
 
   h2 {
@@ -83,6 +86,22 @@ a {
   color: $mint-blue;
 }
 
+body.dark-mode {
+  background: $dark_mode;
+  color: $white;
+
+  .link-thoughts {
+    color: $white;
+  }
+}
+
+.mode-switch {
+  display: flex;
+  align-items: center;
+  font-size: $small;
+}
+
+.mode-switch,
 .link-plain,
 .link-thoughts {
   text-decoration: none;
@@ -106,7 +125,7 @@ a {
   }
 
   time {
-    color: #999;
+    color: $gray;
   }
 }
 
@@ -135,7 +154,7 @@ a {
   }
 
   time {
-    color: #999;
+    color: $gray;
   }
 
   p {
@@ -144,7 +163,7 @@ a {
 }
 
 .dash {
-  color: #999;
+  color: $gray;
 }
 
 @media screen and (max-width: 800px) {
