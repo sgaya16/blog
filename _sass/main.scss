@@ -80,6 +80,7 @@ hr {
 
 time {
   font-size: $xs;
+  color: $gray;
 }
 
 a {
@@ -89,10 +90,6 @@ a {
 body.dark-mode {
   background: $dark_mode;
   color: $white;
-
-  .link-thoughts {
-    color: $white;
-  }
 }
 
 .mode-switch {
@@ -102,17 +99,22 @@ body.dark-mode {
 }
 
 .mode-switch,
-.link-plain,
-.link-thoughts {
+.link-plain {
   text-decoration: none;
+}
+
+.now-header {
+  margin-bottom: 0.2em;
+}
+
+.now-description {
+  margin-top: 0.2em;
+  font-size: $xs;
 }
 
 .link-thoughts {
   font-size: $regular;
-  border: 1px solid $mint_blue;
-  border-radius: 0.8em;
   padding: 0.4em 0.6em;
-  color: $black;
 }
 
 .posts,
@@ -123,15 +125,12 @@ body.dark-mode {
     margin-top: 0.2em;
     margin-bottom: 0.8em;
   }
-
-  time {
-    color: $gray;
-  }
 }
 
 .post-content {
   h2 {
     font-size: $medium;
+    margin-bottom: 0.2em;
   }
 
   ul {

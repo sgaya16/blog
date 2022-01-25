@@ -18,6 +18,18 @@ layout: default
 
   <hr />
 
+  <h2 class="now-header">✨ Now</h2>
+  <p class="now-description">
+    What I'm focused on right
+    <a href="https://nownownow.com/about" target="_blank">now</a>
+  </p>
+  {% for now in site.data.now %}
+  <p>{{ now.content | markdownify }}</p>
+  <time>last updated: {{ now.date | date: "%B %d, %Y" }}</time>
+  {% endfor %}
+
+  <hr />
+
   <h2>🪶 Posts</h2>
   <ul class="posts">
     {% for post in site.posts %}
