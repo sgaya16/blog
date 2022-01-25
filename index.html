@@ -6,14 +6,15 @@ layout: default
 <main>
   <img class="pfp" alt="Sara's profile picture" src="{{ "/assets/images/pfp.jpg"
   | relative_url }}" />
-  <p>
+  <p class="bio">
     I'm Sara, a software developer based in Massachusetts. I work with
     JavaScript, React, Vue, Python, and Django. I love video games 🎮, Sailor
     Moon 🌙, coffee ☕️, and cute things 🌸. Check me out on
-    <a href="https://github.com/sgaya16" target="_blank">🐙 Github</a>,
-    <a href="http://www.sarag.me/" target="_blank">💻 my other site</a>,
-    <a href="https://read.cv/sarag" target="_blank">📝 read.cv</a>, and contact
-    me through my <a href="mailto:saracgaya@gmail.com">📧 email</a>.
+    <a href="https://twitter.com/saragcodes">🐦 Twitter</a>,
+    <a href="https://github.com/sgaya16">🐙 Github</a>,
+    <a href="http://www.sarag.me/">💻 my other site</a>,
+    <a href="https://read.cv/sarag">📝 read.cv</a>, and contact me through my
+    <a href="mailto:saracgaya@gmail.com">📧 email</a>.
   </p>
 
   <hr />
@@ -21,9 +22,9 @@ layout: default
   <h2 class="now-header">✨ Now</h2>
   <p class="now-description">
     What I'm focused on right
-    <a href="https://nownownow.com/about" target="_blank">now</a>
+    <a href="https://nownownow.com/about">now</a>
   </p>
-  {% for now in site.data.now %}
+  {% for now in site.data.now limit: 1 %}
   <p>{{ now.content | markdownify }}</p>
   <time>last updated: {{ now.date | date: "%B %d, %Y" }}</time>
   {% endfor %}
