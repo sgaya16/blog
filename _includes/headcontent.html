@@ -9,10 +9,22 @@
 />
 <!--twitter card meta -->
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:creator" content="@saragcodes" />
+<meta name="twitter:site" content="@saragcodes" />
 <meta name="twitter:domain" content="https://saragaya.com" />
+<meta
+  name="twitter:image"
+  content="{{ site.url }}/assets/images/mint_blue.jpeg"
+/>
 {% if page.title %}
 <meta name="twitter:title" content="{{ page.title }}" />
+{% else %}
+<meta name="twitter:title" content="{{ site.title }}" />
+{% endif %}
+<!-- facebook open graph meta -->
+<meta property="og:url" content="https://saragaya.com" />
+<meta name="og:image" content="{{ site.url }}/assets/images/mint_blue.jpeg" />
+{% if page.title %}
+<meta property="og:title" content="{{ page.title }}" />
 {% else %}
 <meta name="twitter:title" content="{{ site.title }}" />
 {% endif %}
