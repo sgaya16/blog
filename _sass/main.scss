@@ -137,6 +137,15 @@ body.dark-mode {
     list-style-type: square;
     padding-left: 0.8em;
   }
+
+  .post-image {
+    width: 100%;
+  }
+
+  .caption {
+    font-size: $xs;
+    text-align: center;
+  }
 }
 
 .thought-content {
