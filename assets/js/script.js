@@ -7,7 +7,6 @@
 function checkMode() {
   const body = document.body;
   const darkMode = localStorage.getItem("darkMode");
-  console.log(darkMode);
   darkMode === "true"
     ? body.classList.add("dark-mode")
     : body.classList.remove("dark-mode");
