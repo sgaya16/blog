@@ -6,19 +6,18 @@
 
 <channel>
 	<title>{{ site.title }}</title>
+	<description>A site about me and my writing</description>
 	<atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
-	<lastBuildDate>{{ site.time | date_to_xmlschema }}</lastBuildDate>
+	<lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
 	<link>{{ site.url }}</link>
-	<author>
-		<name>Sara Gaya</name>
-	</author>
+	<managingEditor>Sara Gaya</managingEditor>
 	
 	{% for post in site.posts %}
 		<item>
-			<title>{{ post.title | xml_escape }}</title>
+			<title>{{ post.title | markdownify | xml_escape }}</title>
 			<link>{{ site.url }}{{ post.url }}</link>
 			<guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
-			<pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
+			<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
 			<description>{{ post.content | xml_escape }}</description>
 		
 		</item>
@@ -27,9 +26,8 @@
 	{% for thought in site.data.thoughts limit: 10 %}
 		<item>
 			<link>{{ site.url }}/thoughts</link>
-			<guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
-			<pubDate>{{ thought.date | date_to_xmlschema }}</pubDate>
-			<description>{{ thought.content | xml_escape }}</description>
+			<pubDate>{{ thought.date | date_to_rfc822 }}</pubDate>
+			<description>{{ thought.content | markdownify | xml_escape }}</description>
 		</item>
 	{% endfor %}
 
