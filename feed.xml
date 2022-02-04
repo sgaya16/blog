@@ -1,0 +1,38 @@
+---
+---
+
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+
+<channel>
+	<title>{{ site.title }}</title>
+	<atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
+	<lastBuildDate>{{ site.time | date_to_xmlschema }}</lastBuildDate>
+	<link>{{ site.url }}</link>
+	<author>
+		<name>Sara Gaya</name>
+	</author>
+	
+	{% for post in site.posts %}
+		<item>
+			<title>{{ post.title | xml_escape }}</title>
+			<link>{{ site.url }}{{ post.url }}</link>
+			<guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
+			<pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
+			<description>{{ post.content | xml_escape }}</description>
+		
+		</item>
+	{% endfor %}
+	
+	{% for thought in site.data.thoughts limit: 10 %}
+		<item>
+			<link>{{ site.url }}/thoughts</link>
+			<guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
+			<pubDate>{{ thought.date | date_to_xmlschema }}</pubDate>
+			<description>{{ thought.content | xml_escape }}</description>
+		</item>
+	{% endfor %}
+
+</channel>
+
+</rss>
