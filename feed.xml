@@ -25,6 +25,7 @@
 	{% for thought in site.data.thoughts limit: 10 %}
 		<item>
 			<link>{{ site.url }}/thoughts</link>
+			<guid>{{ site.url }}{{ post.url }}</guid>
 			<pubDate>{{ thought.date | date_to_rfc822 }}</pubDate>
 			<description>{{ thought.content | markdownify | xml_escape }}</description>
 		</item>
