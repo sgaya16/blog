@@ -1,5 +1,5 @@
 ---
-title: Pokémon Legends Arceus Is the Refresh This Series Needed
+title: Pokémon Legends Arceus Is the Refresh I Needed
 date: 2022-02-01 06:15:00
 layout: post
 author: Sara Gaya
@@ -23,7 +23,7 @@ Now it is true that GameFreak has changed certain aspects of the games that take
 
 Frankly I still love the Pokémon games and play them because they are cute and fun, like Animal Crossing. But the changes in difficulty, as well as lack of inclusion of all Pokémon from previous games in a new region, has made many turn away from the franchise.
 
-### What Makes Arceus Different?
+## What Makes Arceus Different?
 
 What makes Pokémon Legends: Arceus so special is it's the first game in a long time that feels like a return to Pokémon's roots. It's a game that focuses on the Pokémon and the adventure, along with new game mechanics that are a welcome change after 26 years of the same battle style. Now I admit, it took me a little bit to get used to the new mechanics and really fall in love with the game. But it's been really enjoyable to concentrate and use my brain beyond picking out which partners I want on my team.
 
@@ -33,19 +33,19 @@ I'm also so intrigued by the story! You start out as a teen in modern times who 
 Professor Rowan, is that you?
 {: .caption }
 
-### Catch 'Em All (More Than Once)
+## Catch 'Em All (More Than Once)
 
 The Pokédex completion has become an incredibly essential part of this game. I was never big on filling the Pokédex in previous games- there were other things I'd rather be doing, and I never liked the idea of Pokémon being stuck in those boxes and accessible only through a computer. But the endeavor has become much more compelling to do.
 
 To get a complete Pokémon entry in your dex you can fulfill different research tasks for that Pokémon, such as catching it, defeating it, giving it food, etc. And let me tell you, it's not always easy. Some Pokémon will come attack you (not your Pokémon, YOU) and if you're not careful you may black out in the field. Once you've completed enough research tasks you will have that Pokémon entry marked as complete and you can read all the info about them. Completing entries is key to getting money, gaining rank, and other rewards. It's also pretty satisfying to see the completed entries and the resulting rank promotions.
 
-### The Almighty Sinnoh
+## The Almighty Sinnoh
 
 Later you'll also meet the Diamond and Pearl clans, two rival entities who revere the almighty Sinnoh as their god, but who have different beliefs of what Sinnoh represents- time vs. space (if only they knew!).
 
 It's kind of fascinating to see the complex relationship between the Diamond and Pearl clans. They have a rough history that has caused them to hold each other in disdain, and yet there are several core values they share in common.
 
-### Boss Battles Require More Than Pokémon!
+## Boss Battles Require More Than Pokémon!
 
 Part of the main story is you assisting both clans in quelling their Lord Pokémon, protectors of the region who have become agitated due to a mysterious lightning striking them. The way you battle these bosses is such a fun change from older game mechanics. I really like its engaging format- I have to dodge the Lords' fierce attacks while I throw balms that calm them down, and if there's an opening I can battle with my Pokémon to weaken them so I can throw even more balms. It keeps me on my toes, and it's a challenge! I've had to re-attempt some battle a few times before I finally succeed. These boss battles are a refreshing change of pace, and I hope it's included in future games of the series!
 
@@ -53,7 +53,7 @@ Part of the main story is you assisting both clans in quelling their Lord Pokém
 This game is so pretty!
 {: .caption }
 
-### Bridging the Gap
+## Bridging the Gap
 
 Last but not least, you have side quests you can complete throughout the game. These quests come from the villagers of the town you reside in. The quests themselves are pretty average- a villager may ask you to bring them a Pokémon or show them a completed Pokédex entry, etc.- but what I find fascinating about these quests is seeing how people's relationships with Pokémon are so different in this time period.
 

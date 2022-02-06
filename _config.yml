@@ -5,6 +5,4 @@ url: https://saragaya.com
 baseurl: ""
 collections:
   posts:
-    output: true
-  thoughts:
-    output: false
+    permalink: /post/:title

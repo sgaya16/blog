@@ -23,6 +23,10 @@ header {
   h2 {
     margin-top: 0.6em;
   }
+
+  .home-title {
+    color: $mint_blue;
+  }
 }
 
 main,
@@ -129,7 +133,6 @@ body.dark-mode {
 
 .post-content {
   h2 {
-    font-size: $medium;
     margin-bottom: 0.2em;
   }
 
@@ -179,7 +182,13 @@ body.dark-mode {
   main,
   .post-content,
   .thought-content {
-    max-width: 36em;
+    max-width: 40rem;
+  }
+
+  main,
+  .post-content,
+  .thought-content {
+    font-size: $small;
   }
 }
 
@@ -188,7 +197,7 @@ body.dark-mode {
   main,
   .post-content,
   .thought-content {
-    max-width: 26em;
+    max-width: 26rem;
   }
 }
 
@@ -197,7 +206,7 @@ body.dark-mode {
   main,
   .post-content,
   .thought-content {
-    max-width: 20em;
+    max-width: 22rem;
 
     .pfp {
       width: 60%;
@@ -205,17 +214,15 @@ body.dark-mode {
   }
 
   footer {
-    max-width: 24em;
+    max-width: 20rem;
   }
 }
 
 @media screen and (max-width: 400px) {
   header,
-  main,
-  .post-content,
-  .thought-content {
+  main {
+    max-width: 21rem;
     padding-top: 1.4em;
-    max-width: 18em;
   }
 }
 
@@ -224,7 +231,6 @@ body.dark-mode {
   main,
   .post-content,
   .thought-content {
-    padding-top: 1.4em;
-    max-width: 14em;
+    max-width: 14rem;
   }
 }

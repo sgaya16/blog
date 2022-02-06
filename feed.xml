@@ -1,4 +1,5 @@
 ---
+permalink: /feed/
 ---
 
 <?xml version="1.0" encoding="utf-8"?>
@@ -24,8 +25,8 @@
 	
 	{% for thought in site.data.thoughts %}
 		<item>
-			<link>{{ site.url }}/thoughts#{{ thought.id }}</link>
-			<guid isPermaLink="true">{{ site.url }}/thoughts#{{ thought.id }}</guid>
+			<link>{{ site.url }}#{{ thought.id }}</link>
+			<guid isPermaLink="true">{{ site.url }}/thoughts/#{{ thought.id }}</guid>
 			<pubDate>{{ thought.date | date_to_rfc822 }}</pubDate>
 			<description>{{ thought.content | markdownify | xml_escape }}</description>
 		</item>

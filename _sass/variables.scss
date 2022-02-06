@@ -3,12 +3,13 @@ $serif: "Roboto Slab", serif;
 $sans_serif: "Roboto", sans-serif;
 
 //font sizes
-$regular: 16px;
-$large: 36px;
-$medium: 28px;
-$small: 20px;
-$xs: 12px;
-$xxs: 10px;
+$regular: 1.125rem;
+$large: 2.25rem;
+$medium: 1.75rem;
+$small: 1.25rem;
+$regular_small: 0.875rem;
+$xs: 0.75rem;
+$xxs: 0.625rem;
 
 //font weights
 $default: 400;
@@ -26,5 +27,5 @@ $light_mode: #fafafa;
 $dark_mode: #2f2f2f;
 
 //spacing
-$max_content_width: 38em;
-$max_footer_width: 40em;
+$max_content_width: 38rem;
+$max_footer_width: 30rem;
