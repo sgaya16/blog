@@ -25,7 +25,7 @@
 	{% for thought in site.data.thoughts %}
 		<item>
 			<link>{{ site.url }}/thoughts/#{{ thought.date }}</link>
-			<guid>{{ site.url }}/thoughts/#{{ thought.date }}</guid>
+			<guid isPermaLink="true">{{ site.url }}/thoughts/#{{ thought.date }}</guid>
 			<pubDate>{{ thought.date | date_to_rfc822 }}</pubDate>
 			<description>{{ thought.content | markdownify | xml_escape }}</description>
 		</item>
