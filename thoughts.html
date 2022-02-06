@@ -9,7 +9,7 @@ description: "what I think about tweeting, but never do"
   <p>Musings I would tweet about if I wasn't cripplingly shy.</p>
   <ul>
     {% for thought in site.data.thoughts %}
-    <li class="thought" id="{{ thought.date }}">
+    <li class="thought" id="{{ thought.id }}">
       <time>{{ thought.date | date_to_string }}</time>
       {{ thought.content | markdownify }}
     </li>

@@ -1,23 +1,31 @@
-- date: 2022-02-04
+- id: 8
+  date: 2022-02-04
   content: People with blogs, check out [this post](https://lo-victoria.com/3-simple-ways-to-make-your-blog-more-readable) about making your blog more readable! It's helped me so much and I'm editing my blog as I type this lol
 
-- date: 2022-02-03
+- id: 7
+  date: 2022-02-03
   content: If you noticed that images in my post aren't loading, it's because I'm trying to figure out how to render them. Image paths in Jekyll are hard 😥
 
-- date: 2022-01-31
+- id: 6
+  date: 2022-01-31
   content: Pokemon Legends Arceus is freaking fantastic. Go play it if you haven't already!
 
-- date: 2022-01-27
+- id: 5
+  date: 2022-01-27
   content: The DPS classes in FF XIV deserve more player commendations for their underrated contributions <br /> -written by a DPS player 🏹
 
-- date: 2022-01-25
+- id: 4
+  date: 2022-01-25
   content: Trying to keep up with this whole "tech professional" thing and made a Twitter account. If you're interested, check me out [@saragcodes](https://twitter.com/saragcodes) 👩🏻‍💻
 
-- date: 2022-01-22
+- id: 3
+  date: 2022-01-22
   content: Went ice skating and remembered how much I love it. Definitely going to invest in a pair of skates ⛸
 
-- date: 2022-01-21
+- id: 2
+  date: 2022-01-21
   content: As I rewatch Brooklyn 99 for the gazillionth time at 4 am, I have come to accept that I have grown fond of my TV cage
 
-- date: 2022-01-21
+- id: 1
+  date: 2022-01-21
   content: I actually finished this site?? I- I'm shook??
