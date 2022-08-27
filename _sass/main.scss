@@ -24,6 +24,12 @@ main {
   margin: auto;
 }
 
+.post-content,
+.update-content {
+  max-width: 64vw;
+  margin: auto;
+}
+
 header {
   display: flex;
   flex-direction: row;
@@ -228,13 +234,12 @@ body.dark-mode {
   line-height: 1.6rem;
 }
 
-.post-content,
-.update-content {
-  margin-left: $max_margin;
-  margin-right: $max_margin;
-}
-
 .post-content {
+  h1 {
+    color: $indigo;
+    line-height: 1.8rem;
+  }
+
   h2 {
     margin-bottom: 0.2em;
   }
@@ -289,13 +294,6 @@ body.dark-mode {
 // }
 
 @media (max-width: 1100px) {
-  main {
-    .section {
-      margin-right: $max_margin - 10rem;
-      margin-left: $max_margin - 10rem;
-    }
-  }
-
   .post-content {
     h1 {
       line-height: 2rem;
@@ -306,7 +304,9 @@ body.dark-mode {
 @media (max-width: 1000px) {
   header,
   main,
-  footer {
+  footer,
+  .post-content,
+  .update-content {
     max-width: 96vw;
   }
 
@@ -360,63 +360,4 @@ body.dark-mode {
       }
     }
   }
-
-  .post-content,
-  .update-content {
-    margin-left: $max_margin - 11rem;
-    margin-right: $max-margin - 11rem;
-
-    h1 {
-      line-height: 1.8rem;
-    }
-  }
 }
-
-// @media screen and (max-width: 700px) {
-//   header,
-//   main,
-//   .post-content,
-//   .update-content {
-//     max-width: 26rem;
-//   }
-// }
-//
-// @media screen and (max-width: 500px) {
-//   header,
-//   main,
-//   .post-content,
-//   .update-content {
-//     max-width: 20rem;
-//
-//     .pfp {
-//       width: 60%;
-//     }
-//   }
-//
-//   footer {
-//     max-width: 18rem;
-//   }
-// }
-//
-// @media screen and (max-width: 400px) {
-//   header,
-//   main,
-//   .post-content,
-//   .update-content {
-//     max-width: 18rem;
-//     padding-top: 1.4em;
-//   }
-//
-//   footer {
-//     max-width: 18rem;
-//   }
-// }
-//
-// @media screen and (max-width: 300px) {
-//   header,
-//   main,
-//   .post-content,
-//   .update-content {
-//     max-width: 14rem;
-//   }
-// }
