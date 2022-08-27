@@ -283,15 +283,13 @@ body.dark-mode {
 
 /*********media queries************/
 
-// //intro sizing for ultrawide screens
-// @media (min-width: 1800px) {
-//   main {
-//     .intro {
-//       margin-right: $max_margin + 12rem;
-//       margin-left: $max-margin + 12rem;
-//     }
-//   }
-// }
+// post sizing for ultrawide screens
+@media (min-width: 1300px) {
+  .post-content,
+  .update-content {
+    max-width: 48vw;
+  }
+}
 
 @media (max-width: 1100px) {
   .post-content {
