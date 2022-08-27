@@ -18,15 +18,18 @@ body {
   font-size: $regular;
 }
 
+header,
+main {
+  max-width: 88vw;
+  margin: auto;
+}
+
 header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 0.2rem;
   margin-bottom: 8rem;
-  margin-left: $max-margin;
-  margin-right: $max-margin;
-  padding-right: 4rem;
 
   .header-logo {
     a {
@@ -50,9 +53,8 @@ main,
   .intro {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin-left: $max-margin;
-    margin-right: $max-margin;
+    justify-content: center;
+    margin: 0 8vw;
   }
 
   .pfp {
@@ -80,7 +82,7 @@ main,
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 40%;
+    width: 50%;
     padding-top: 0.6rem;
 
     .social-icon {
@@ -91,7 +93,7 @@ main,
   .bridge {
     display: flex;
     justify-content: center;
-    padding-top: 7rem;
+    padding-top: 4rem;
     padding-bottom: 4rem;
 
     h1 {
@@ -104,8 +106,8 @@ main,
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 2rem;
-    margin-right: $max_margin - 2rem;
-    margin-left: $max_margin - 2rem;
+    max-width: 96vw;
+    margin: auto;
 
     .box {
       display: block;
@@ -113,8 +115,8 @@ main,
       background-color: $white;
       border-radius: 1rem;
       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px;
-      padding-top: 0.6rem;
-      padding-bottom: 0.6rem;
+      padding: 0.4rem;
+      margin: 1.6rem;
       text-align: center;
       transition: all 0.2s ease;
 
@@ -210,8 +212,15 @@ body.dark-mode {
 }
 
 .now-description {
+  display: inline-block;
   margin-top: 0.2em;
   font-size: $xs;
+
+  img {
+    width: $xs;
+    height: $xs;
+    vertical-align: sub;
+  }
 }
 
 .posts {
@@ -305,7 +314,7 @@ body.dark-mode {
       margin-right: $max_margin - 9rem;
 
       .bio h1 {
-        font-size: $xl - 0.2rem;
+        font-size: $xl - 0.1rem;
       }
     }
 

@@ -22,20 +22,20 @@ layout: default
       </div>
       <div class="socials">
         <a class="social-icon" href="https://github.com/sgaya16">
-          <img alt="Github link" src="{{
-          "/assets/images/social_icons/github.svg" | relative_url }}" />
+          <img alt="Github link" src="{{ "/assets/images/icons/github.svg" |
+          relative_url }}" />
         </a>
         <a class="social-icon" href="#">
-          <img alt="Twitter link" src="{{
-          "/assets/images/social_icons/twitter.svg" | relative_url }}" />
+          <img alt="Twitter link" src="{{ "/assets/images/icons/twitter.svg" |
+          relative_url }}" />
         </a>
         <a class="social-icon" href="#">
-          <img alt="Linkedin link" src="{{
-          "/assets/images/social_icons/linkedin.svg" | relative_url }}" />
+          <img alt="Linkedin link" src="{{ "/assets/images/icons/linkedin.svg" |
+          relative_url }}" />
         </a>
         <a class="social-icon" href="#">
-          <img alt="Tiktok link" src="{{ "/assets/images/social_icons/music.svg"
-          | relative_url }}" />
+          <img alt="Tiktok link" src="{{ "/assets/images/icons/music.svg" |
+          relative_url }}" />
         </a>
       </div>
     </div>
@@ -54,7 +54,10 @@ layout: default
       {{ now.content | markdownify }} {% endfor %}
       <p class="now-description">
         Learn more about the purpose of
-        <a href="https://nownownow.com/about">now</a>
+        <a href="https://nownownow.com/about"
+          >now <img alt="external link" src="{{
+          "/assets/images/icons/external-link.svg" | relative_url }}" /></a
+        >
       </p>
     </div>
 
