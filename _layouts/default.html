@@ -3,11 +3,7 @@
   <head>
     {% include headcontent.html %}
   </head>
-  {% if page.url == "/thoughts/" or page.url contains "/post/" %}
-    {% include postheader.html %}
-  {% else %}
-    {% include homeheader.html %}
-  {% endif %}
+  {% include header.html %}
   <body>
     {{ content }} <script type="text/javascript" src="{{ "../assets/js/script.js"
     | relative_url }}"></script>

@@ -1,0 +1,19 @@
+---
+title: Sweets
+layout: default
+description: "what I think about tweeting, but never do"
+permalink: /updates/
+---
+
+<main class="update-content">
+  <h2>Updates</h2>
+  <p>Musings I would share on social media if I wasn't cripplingly shy 😳</p>
+  <ul>
+    {% for update in site.data.updates %}
+    <li class="update" id="{{ update.id }}">
+      <time>{{ update.date | date_to_string }}</time>
+      {{ update.content | markdownify }}
+    </li>
+    {% endfor %}
+  </ul>
+</main>

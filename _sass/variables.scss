@@ -1,13 +1,28 @@
 // fonts
-$serif: "Roboto Slab", serif;
-$sans_serif: "Roboto", sans-serif;
+@font-face {
+  font-family: "YoungSerif";
+  src: url("/assets/fonts/YoungSerif-Regular.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HKGrotesk";
+  src: url("/assets/fonts/HKGrotesk-Regular.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+$serif: "YoungSerif", serif;
+$sans_serif: "HKGrotesk", sans-serif;
 
 //font sizes
-$regular: 1.125rem;
-$large: 2.25rem;
-$medium: 1.75rem;
-$small: 1.25rem;
-$regular_small: 0.875rem;
+$regular: 1rem;
+$lg: 2rem;
+$xl: 2.5rem;
+$xxl: 3rem;
+$md: 1.5rem;
+$sm: 1.25rem;
 $xs: 0.75rem;
 $xxs: 0.625rem;
 
@@ -22,10 +37,12 @@ $black: #161616;
 $gray: #999;
 $mint: #20e3b2;
 $mint_blue: #429e9d;
+$indigo: #6025ec;
+$pink: #f194ed;
 $lavender: #a6a6ed;
 $light_mode: #fafafa;
 $dark_mode: #2f2f2f;
 
 //spacing
-$max_content_width: 38rem;
+$max_margin: 12rem;
 $max_footer_width: 30rem;

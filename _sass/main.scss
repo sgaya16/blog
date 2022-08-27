@@ -1,6 +1,18 @@
+@keyframes colorChange {
+  0% {
+    color: $lavender;
+  }
+  50% {
+    color: #6025ec;
+  }
+  100% {
+    color: $pink;
+  }
+}
+
 body {
   font-family: $sans_serif;
-  line-height: 1.8em;
+  line-height: 1.5rem;
   background: $light_mode;
   color: $black;
   font-size: $regular;
@@ -9,33 +21,111 @@ body {
 header,
 main,
 .post-content,
-.thought-content {
-  max-width: $max_content_width;
-  margin: auto;
+.update-content {
+  margin: 0 $max_margin;
 }
 
 header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 1.4em;
+  margin-top: 0.2rem;
+  margin-bottom: 8rem;
+  padding-right: 4rem;
+
+  .header-logo {
+    a {
+      text-decoration: none;
+      color: $lavender;
+      animation: colorChange 20s;
+      animation-iteration-count: infinite;
+    }
+  }
 
   h2 {
     margin-top: 0.6em;
-  }
-
-  .home-title {
-    color: $mint_blue;
   }
 }
 
 main,
 .post-content {
-  padding-top: 0.8em;
-  padding-bottom: 0.4em;
+  padding-top: 0.8rem;
+  padding-bottom: 0.4rem;
+
+  .intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
   .pfp {
+    img {
+      border-radius: 0.4rem;
+      width: 80%;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+        rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    }
+  }
+
+  .bio {
+    text-align: left;
+  }
+
+  .bullets {
+    padding-top: 0.4rem;
+  }
+
+  .socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     width: 40%;
+    padding-top: 0.6rem;
+  }
+
+  .bridge {
+    display: flex;
+    justify-content: center;
+    padding-top: 7rem;
+    padding-bottom: 4rem;
+
+    h1 {
+      font-size: $xxl;
+    }
+  }
+
+  .section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+
+    .box {
+      display: block;
+      width: 30%;
+      border-radius: 1rem;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      padding-top: 0.6rem;
+      padding-bottom: 0.6rem;
+      padding-right: 0.4rem;
+      padding-left: 0.4rem;
+      text-align: center;
+
+      .box-emoji {
+        padding-top: 1rem;
+        font-size: $lg;
+      }
+
+      .box-header {
+        font-size: $md;
+      }
+    }
+  }
+
+  .single {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 }
 
@@ -48,7 +138,7 @@ footer {
   margin-top: 1.6em;
 
   a {
-    color: $mint_blue;
+    color: $pink;
   }
 }
 
@@ -57,12 +147,10 @@ h1,
 h2,
 h3 {
   font-family: $serif;
-  font-weight: $semi_bold;
 }
 
 h1 {
-  font-weight: $semi_bold;
-  font-size: $large;
+  font-size: $lg;
 }
 
 ul {
@@ -74,21 +162,13 @@ ul {
   }
 }
 
-hr {
-  border: 0;
-  border-top: 1px solid $mint_blue;
-  border-top-style: dotted;
-  margin: 2em 0;
-  width: 36%;
-}
-
 time {
   font-size: $xs;
   color: $gray;
 }
 
 a {
-  color: $mint-blue;
+  color: $lavender;
 }
 
 body.dark-mode {
@@ -99,16 +179,12 @@ body.dark-mode {
 .mode-switch {
   display: flex;
   align-items: center;
-  font-size: $small;
+  font-size: $lg;
 }
 
 .mode-switch,
 .link-plain {
   text-decoration: none;
-}
-
-.now-header {
-  margin-bottom: 0.2em;
 }
 
 .now-description {
@@ -121,14 +197,8 @@ body.dark-mode {
   padding: 0.4em 0.6em;
 }
 
-.posts,
-.thoughts {
-  line-height: 1.6em;
-
-  p {
-    margin-top: 0.2em;
-    margin-bottom: 0.8em;
-  }
+.posts {
+  line-height: 1.6rem;
 }
 
 .post-content {
@@ -151,14 +221,14 @@ body.dark-mode {
   }
 }
 
-.thought-content {
+.update-content {
   h2 {
-    font-size: $medium;
+    font-size: $md;
     margin-bottom: 0.4em;
   }
 
   li {
-    border: 1px dotted $mint_blue;
+    border: 1px solid $indigo;
     border-radius: 2em;
     padding: 1em;
     margin-bottom: 2em;
@@ -180,8 +250,8 @@ body.dark-mode {
 @media screen and (max-width: 800px) {
   main,
   .post-content,
-  .thought-content {
-    font-size: $small;
+  .update-content {
+    font-size: $sm;
   }
 }
 
@@ -189,7 +259,7 @@ body.dark-mode {
   header,
   main,
   .post-content,
-  .thought-content {
+  .update-content {
     max-width: 26rem;
   }
 }
@@ -198,7 +268,7 @@ body.dark-mode {
   header,
   main,
   .post-content,
-  .thought-content {
+  .update-content {
     max-width: 20rem;
 
     .pfp {
@@ -215,7 +285,7 @@ body.dark-mode {
   header,
   main,
   .post-content,
-  .thought-content {
+  .update-content {
     max-width: 18rem;
     padding-top: 1.4em;
   }
@@ -229,7 +299,7 @@ body.dark-mode {
   header,
   main,
   .post-content,
-  .thought-content {
+  .update-content {
     max-width: 14rem;
   }
 }
