@@ -38,7 +38,7 @@ layout: default
   </div>
 
   <div class="bridge">
-    <h1>🚀&nbsp;&nbsp; Let's Go!</h1>
+    <h1>🚀&nbsp; Let's Go!</h1>
   </div>
 
   <div class="section">
@@ -70,8 +70,7 @@ layout: default
       {% for update in site.data.updates limit: 1 %}
       <time>last updated: {{ update.date | date: "%B %d, %Y" }}</time>
       <br />
-      <p>{{ update.content | markdownify }}</p>
-      {% endfor %}
+      {{ update.content | markdownify }} {% endfor %}
       <a href="/updates">see more</a>
     </div>
   </div>
