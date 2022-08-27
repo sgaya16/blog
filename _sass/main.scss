@@ -112,6 +112,7 @@ main,
     .box {
       display: block;
       width: 30%;
+
       background-color: $white;
       border-radius: 1rem;
       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px;
@@ -150,8 +151,8 @@ main,
 }
 
 footer {
-  margin-left: $max_footer_margin;
-  margin-right: $max_footer_margin;
+  max-width: 96vw;
+  margin: auto;
   margin-top: 1.4rem;
   padding-top: 1.6rem;
   font-size: $xs;
@@ -277,15 +278,15 @@ body.dark-mode {
 
 /*********media queries************/
 
-//intro sizing for ultrawide screens
-@media (min-width: 1800px) {
-  main {
-    .intro {
-      margin-right: $max_margin + 12rem;
-      margin-left: $max-margin + 12rem;
-    }
-  }
-}
+// //intro sizing for ultrawide screens
+// @media (min-width: 1800px) {
+//   main {
+//     .intro {
+//       margin-right: $max_margin + 12rem;
+//       margin-left: $max-margin + 12rem;
+//     }
+//   }
+// }
 
 @media (max-width: 1100px) {
   main {
@@ -303,46 +304,40 @@ body.dark-mode {
 }
 
 @media (max-width: 1000px) {
-  header {
-    margin-left: $max_margin - 11rem;
-    margin-right: $max-margin - 11rem;
+  header,
+  main,
+  footer {
+    max-width: 96vw;
   }
 
   main {
     .intro {
-      margin-left: $max_margin - 9rem;
-      margin-right: $max_margin - 9rem;
-
       .bio h1 {
         font-size: $xl - 0.1rem;
       }
     }
 
     .section {
-      margin-right: $max_margin - 11.5rem;
-      margin-left: $max_margin - 11.5rem;
+      .box {
+        padding: 0.4rem;
+        margin: 0;
+      }
     }
-  }
-
-  footer {
-    margin-right: $max_footer_margin - 18rem;
-    margin-left: $max_footer_margin - 18rem;
   }
 }
 
 @media (max-width: 550px) {
   header {
-    margin-left: $max_margin - 11rem;
-    margin-right: $max-margin - 11rem;
     margin-bottom: 3rem;
-    padding-right: 0;
   }
 
   main {
     .intro {
       flex-direction: column;
-      margin-left: $max_margin - 11.5rem;
-      margin-right: $max_margin - 11.5rem;
+
+      .bio h1 {
+        font-size: $lg;
+      }
 
       .pfp {
         text-align: center;
@@ -351,26 +346,19 @@ body.dark-mode {
     }
 
     .bridge {
-      padding-top: 4rem;
-      padding-bottom: 2rem;
+      padding: 2.4rem 0;
     }
 
     .section {
       flex-direction: column;
       align-items: center;
-      margin-left: $max_margin - 11rem;
-      margin-right: $max_margin - 11rem;
 
       .box {
+        vertical-align: top;
         width: 90%;
         margin-bottom: 1.2rem;
       }
     }
-  }
-
-  footer {
-    margin-left: $max_footer_margin - 19rem;
-    margin-right: $max_footer_margin - 19rem;
   }
 
   .post-content,
@@ -380,14 +368,6 @@ body.dark-mode {
 
     h1 {
       line-height: 1.8rem;
-    }
-  }
-}
-
-@media (max-width: 300px) {
-  main .bio {
-    h1 {
-      font-size: $lg;
     }
   }
 }
