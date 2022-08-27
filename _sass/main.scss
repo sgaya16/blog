@@ -202,6 +202,10 @@ body.dark-mode {
   .box {
     background-color: $black;
   }
+
+  .post-content h1 {
+    color: $white;
+  }
 }
 
 .mode-switch {
