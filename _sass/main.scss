@@ -371,4 +371,9 @@ body.dark-mode {
       }
     }
   }
+
+  .post-content,
+  .update-content {
+    max-width: 96vw;
+  }
 }
