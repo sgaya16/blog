@@ -61,12 +61,13 @@ main,
     flex-direction: row;
     justify-content: center;
     margin: 0 8vw;
+    align-items: center;
   }
 
   .pfp {
     img {
       border-radius: 0.4rem;
-      width: 80%;
+      width: 88%;
       box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
         rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     }
@@ -99,8 +100,8 @@ main,
   .bridge {
     display: flex;
     justify-content: center;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 6.5rem;
+    padding-bottom: 3.5rem;
 
     h1 {
       font-size: $xl;
@@ -311,7 +312,11 @@ body.dark-mode {
   main {
     .intro {
       .bio h1 {
-        font-size: $xl - 0.1rem;
+        font-size: $xl - 0.2rem;
+      }
+
+      .pfp {
+        width: 96%;
       }
 
       .socials {
@@ -320,25 +325,20 @@ body.dark-mode {
     }
 
     .section {
+      flex-direction: column;
+      align-items: center;
+
       .box {
-        padding: 0.4rem;
-        margin: 0;
+        vertical-align: top;
+        width: 72%;
+        margin-bottom: 1.2rem;
+        padding: 1rem;
       }
     }
   }
 }
 
 @media (max-width: 650px) {
-  main {
-    .intro {
-      .bio h1 {
-        font-size: $lg;
-      }
-    }
-  }
-}
-
-@media (max-width: 550px) {
   header {
     margin-bottom: 3rem;
   }
@@ -347,24 +347,13 @@ body.dark-mode {
     .intro {
       flex-direction: column;
 
+      .bio h1 {
+        font-size: $lg;
+      }
+
       .pfp {
         text-align: center;
         padding-bottom: 1rem;
-      }
-    }
-
-    .bridge {
-      padding: 2.4rem 0;
-    }
-
-    .section {
-      flex-direction: column;
-      align-items: center;
-
-      .box {
-        vertical-align: top;
-        width: 90%;
-        margin-bottom: 1.2rem;
       }
     }
   }

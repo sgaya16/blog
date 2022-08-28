@@ -49,16 +49,18 @@ layout: default
   </div>
 
   <div class="bridge">
-    <h1>🚀&nbsp; Let's Go!</h1>
+    <h1>🚀 Let's Go!</h1>
   </div>
 
   <div class="section">
     <div class="box">
       <div class="box-emoji">✨</div>
       <h2 class="box-header">Now</h2>
-      {% for now in site.data.now limit: 1 %}
+      {% for now in site.data.now limit: 1 %} {% comment %}
       <time>last updated: {{ now.date | date: "%B %d, %Y" }}</time>
-      {{ now.content | markdownify }} {% endfor %}
+      {% endcomment %}
+      <p>{{ now.content | markdownify }}</p>
+      {% endfor %}
       <p class="now-description">
         Learn more about the purpose of
         <a href="https://nownownow.com/about"
@@ -81,9 +83,9 @@ layout: default
     <div class="box">
       <div class="box-emoji">📢</div>
       <h2 class="box-header">Updates</h2>
-      {% for update in site.data.updates limit: 1 %} {% comment %}
-      <time>last updated: {{ update.date | date: "%B %d, %Y" }}</time> <br />
-      {% endcomment %} {{ update.content | markdownify }} {% endfor %}
+      {% for update in site.data.updates limit: 1 %}
+      <p>{{ update.content | markdownify }}</p>
+      {% endfor %}
       <a href="/updates">see more</a>
     </div>
   </div>
